@@ -11,12 +11,12 @@ const postsNode = document.querySelector('.js-posts');
 const itemsTextLimitNode = document.querySelector('.js-text-limit');
 
 newPostBtnNode.addEventListener('click', function () {
-    if(!postTitleInputNode.value){
+    if(!postTitleInputNode.value.trim()){
         alert("Поле ввода (Напишите заголовок) не заполнено!");
         return;
     }
 
-    if(!postTextInputNode.value){
+    if(!postTextInputNode.value.trim()){
         alert("Поле ввода (Напишите пост) не заполнено!");
         return;
     }
